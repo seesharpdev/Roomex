@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Roomex/.vs/Roomex
+/Roomex/GeoLocationService/obj
+/Roomex/GeoLocationService.UnitTests/bin/Debug/net5.0
+/Roomex/GeoLocationService.UnitTests/obj
+/Roomex/WebApi.Host/WebApi.Host/bin/Debug/net5.0
+/Roomex/WebApi.Host/WebApi.Host/obj
+/Roomex/WebApi.Host.IntegrationTests/obj
+/Roomex/WebApi.Host.UnitTests/bin/Debug/net5.0
+/Roomex/WebApi.Host.UnitTests/obj
