@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi.Host</name>
+    </assembly>
+    <members>
+        <member name="T:WebApi.Host.Controllers.DistanceController">
+            <summary>
+            The <c>Distance</c> Controller.
+            </summary>
+        </member>
+        <member name="M:WebApi.Host.Controllers.DistanceController.#ctor(Roomex.Core.Interfaces.Services.IGeoLocationService,Microsoft.Extensions.Logging.ILogger{WebApi.Host.Controllers.DistanceController})">
+            <summary>
+            Initializes a new instance of the <c>DistanceController</c>.
+            </summary>
+            <param name="geoLocationService"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WebApi.Host.Controllers.DistanceController.Get(System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            Returns the distance between two coordinates.
+            </summary>
+            <param name="firstLatitude">The latitude of the first coordinate.</param>
+            <param name="firstLongitude">The longitude of the first coordinate.</param>
+            <param name="secondLatitude">The latitude of the second coordinate.</param>
+            <param name="secondLongitude">The longitude of the second coordinate.</param>
+            <param name="distanceUnit">The unit for the distance, either 'K' for kilometers or 'M' for miles.</param>
+            <returns>The distance between the coordinates in the given distance unit.</returns>
+        </member>
+    </members>
+</doc>

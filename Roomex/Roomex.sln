@@ -3,15 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Host", "WebApi.Host\WebApi.Host\WebApi.Host.csproj", "{A20ADD32-9973-485D-82CE-9CCEBF098637}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{F9F958E7-7018-4069-94BC-A3A11AC9D7BC}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Distance between two points - level I.docx = Documentation\Distance between two points - level I.docx
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoLocationService", "GeoLocationService\GeoLocationService.csproj", "{C5239E45-94F8-4439-830C-1CC59AE32BC1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{909EDFE8-5F0A-4085-AF46-295DF6B458B7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoLocationService.UnitTests", "GeoLocationService.UnitTests\GeoLocationService.UnitTests.csproj", "{6066419D-F3FA-4846-A1C7-0C374143D585}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{8714F2C5-78DD-4FDB-8BD6-A6002A314606}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Host.UnitTests", "WebApi.Host.UnitTests\WebApi.Host.UnitTests.csproj", "{9A76C833-B3A4-4B80-AB3B-3AEB63A4EE5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roomex.Core.Interfaces", "Core\Interfaces\Roomex.Core.Interfaces.csproj", "{3A8BC7AC-EABA-44EE-A053-8FD4F002B8C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Host.IntegrationTests", "WebApi.Host.IntegrationTests\WebApi.Host.IntegrationTests.csproj", "{89F7632E-D494-4F6D-86AB-A2EF784F5609}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roomex.Core.Services", "Core\Services\Roomex.Core.Services.csproj", "{BE961D29-DCCF-44DC-9246-3103A90120BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roomex.Core.Services.UnitTests", "Core\Tests\Roomex.Core.Services.UnitTests.csproj", "{F7AF3C11-1916-4922-A769-86E729E21157}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Host.IntegrationTests", "Hosts\WebApi.Host.IntegrationTests\WebApi.Host.IntegrationTests.csproj", "{80396E8A-5D26-4477-95E5-A3E59F193441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Host", "Hosts\WebApi.Host\WebApi.Host\WebApi.Host.csproj", "{F1D2AA90-6A03-4CBE-A6A4-955C3F716A5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,29 +28,36 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A20ADD32-9973-485D-82CE-9CCEBF098637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A20ADD32-9973-485D-82CE-9CCEBF098637}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A20ADD32-9973-485D-82CE-9CCEBF098637}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A20ADD32-9973-485D-82CE-9CCEBF098637}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5239E45-94F8-4439-830C-1CC59AE32BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5239E45-94F8-4439-830C-1CC59AE32BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5239E45-94F8-4439-830C-1CC59AE32BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5239E45-94F8-4439-830C-1CC59AE32BC1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6066419D-F3FA-4846-A1C7-0C374143D585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6066419D-F3FA-4846-A1C7-0C374143D585}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6066419D-F3FA-4846-A1C7-0C374143D585}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6066419D-F3FA-4846-A1C7-0C374143D585}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A76C833-B3A4-4B80-AB3B-3AEB63A4EE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A76C833-B3A4-4B80-AB3B-3AEB63A4EE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A76C833-B3A4-4B80-AB3B-3AEB63A4EE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A76C833-B3A4-4B80-AB3B-3AEB63A4EE5D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{89F7632E-D494-4F6D-86AB-A2EF784F5609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89F7632E-D494-4F6D-86AB-A2EF784F5609}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89F7632E-D494-4F6D-86AB-A2EF784F5609}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89F7632E-D494-4F6D-86AB-A2EF784F5609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8BC7AC-EABA-44EE-A053-8FD4F002B8C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8BC7AC-EABA-44EE-A053-8FD4F002B8C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8BC7AC-EABA-44EE-A053-8FD4F002B8C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8BC7AC-EABA-44EE-A053-8FD4F002B8C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE961D29-DCCF-44DC-9246-3103A90120BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE961D29-DCCF-44DC-9246-3103A90120BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE961D29-DCCF-44DC-9246-3103A90120BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE961D29-DCCF-44DC-9246-3103A90120BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7AF3C11-1916-4922-A769-86E729E21157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7AF3C11-1916-4922-A769-86E729E21157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7AF3C11-1916-4922-A769-86E729E21157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7AF3C11-1916-4922-A769-86E729E21157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80396E8A-5D26-4477-95E5-A3E59F193441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80396E8A-5D26-4477-95E5-A3E59F193441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80396E8A-5D26-4477-95E5-A3E59F193441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80396E8A-5D26-4477-95E5-A3E59F193441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1D2AA90-6A03-4CBE-A6A4-955C3F716A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1D2AA90-6A03-4CBE-A6A4-955C3F716A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1D2AA90-6A03-4CBE-A6A4-955C3F716A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1D2AA90-6A03-4CBE-A6A4-955C3F716A5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A8BC7AC-EABA-44EE-A053-8FD4F002B8C1} = {909EDFE8-5F0A-4085-AF46-295DF6B458B7}
+		{BE961D29-DCCF-44DC-9246-3103A90120BE} = {909EDFE8-5F0A-4085-AF46-295DF6B458B7}
+		{F7AF3C11-1916-4922-A769-86E729E21157} = {909EDFE8-5F0A-4085-AF46-295DF6B458B7}
+		{80396E8A-5D26-4477-95E5-A3E59F193441} = {8714F2C5-78DD-4FDB-8BD6-A6002A314606}
+		{F1D2AA90-6A03-4CBE-A6A4-955C3F716A5E} = {8714F2C5-78DD-4FDB-8BD6-A6002A314606}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2930AF11-F4C4-4D61-A06A-B35A19E10243}

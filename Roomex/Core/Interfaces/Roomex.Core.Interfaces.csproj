@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>Roomex.Core.Interfaces</AssemblyName>
+    <RootNamespace>Roomex.Core.Interfaces</RootNamespace>
+  </PropertyGroup>
+
+</Project>
